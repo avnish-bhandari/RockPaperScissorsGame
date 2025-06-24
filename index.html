@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RockPaperScissors-Game</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <h1 class="bg-[#33312E] text-white h-20 flex items-center justify-center font-semibold text-3xl">Rock Paper Scissors</h1>
+    <div id="choices" class="flex justify-center items-center mt-10 gap-6">
+        <div id="rock" class="choice h-44 w-44 hover:bg-[#33312E] rounded-full flex items-center justify-center">
+            <img src="images/rock.png" alt="" class="h-40 w-40 object-cover rounded-full hover:cursor-pointer">
+        </div>
+        <div id="paper" class="choice h-44 w-44 hover:bg-[#33312E] rounded-full flex items-center justify-center">
+            <img src="images/paper.png" alt="" class="h-40 w-40 object-cover rounded-full hover:cursor-pointer">
+        </div>
+        <div id="scissor" class="choice h-44 w-44 hover:bg-[#33312E] rounded-full flex items-center justify-center">
+            <img src="images/scissors.png" alt="" class="h-40 w-40 object-cover rounded-full hover:cursor-pointer">
+        </div>
+    </div>
+
+    <div id="score-board" class="flex items-center justify-center gap-6 text-2xl font-semibold mt-28">
+        <div id="score" class="text-center">
+            <p id="user-score" class="text-5xl">0</p>
+            <p>You</p>
+        </div>
+        <div id="score" class="text-center">
+            <p id="comp-score" class="text-5xl">0</p>
+            <p>Comp</p>
+        </div>
+    </div>
+
+    <div id="msg-container" class="flex justify-center items-center mt-16">
+        <p id="msg" class="bg-[#33312E] text-white h-16  text-2xl font-bold inline justify-center items-center px-4 py-3 rounded-full cursor-pointer">Play your turn</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
